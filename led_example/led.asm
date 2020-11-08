@@ -2,11 +2,12 @@
 ;
 ; LED Flash example
 ;
+            BR START ; Branch to start of program
 
 LED_PORT    DW 0  ; IO address of LED port register
 COUNTER     DW 0  ; Counter variable
 
-            LOAD #1         ; Load A with 1
+START       LOAD #1         ; Load A with 1
 LP1         OUT LED_PORT    ; Write A to LED port
             LOAD #30        ; Load A with outer loop start count value, adjust this value for differnt clock speeds
 LP2         STORE COUNTER   ; Store A in counter variable

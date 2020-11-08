@@ -76,8 +76,8 @@ architecture rtl of hello_world_top is
     signal ram_wr      : std_logic;
     signal io_rd       : std_logic;
     signal io_wr       : std_logic;
-	signal reset_done  : std_logic;
-	signal reset_counter : integer range 0 to 15;
+    signal reset_done  : std_logic;
+    signal reset_counter : integer range 0 to 15;
 
 begin
 
